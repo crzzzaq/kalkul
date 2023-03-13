@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    background-color: black;
+}
+
+.calculator {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.calc__display {
+    width: 100%;
+}
+
+
+
+
+.key {
+    width: 25%;
+    height: 50px;
+}
