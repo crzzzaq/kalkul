@@ -1,19 +1,18 @@
+
+let input = document.querySelector('#display');
+let key = document.querySelector('.key')
+let keyboard = document.querySelectorAll('.key')
 let calc = document.querySelector('#calc');
-let display = document.querySelector('#display');
-let keys = document.querySelectorAll('.key');
 let result = document.querySelector('#result');
 let reset = document.querySelector('#reset');
 
-
 let exp = '';
 
-display.style.textAlign = 'right'
-
-for (let key of keys) {
-    key.addEventListener('click', (evt) => {
-        evt.preventDefault();
+for (let key of keyboard) {
+    key.addEventListener('click', function () {
         exp = exp + key.textContent;
-        display.value = exp;
+        input.value = exp;
+        console.log(input);
     })
 }
 result.addEventListener('click', (evt) => {
